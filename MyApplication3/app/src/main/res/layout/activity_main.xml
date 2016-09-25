@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:padding="10dip"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.insky.myapplication3.MainActivity">
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:cursorVisible="true"
+        android:gravity="right"
+        android:text=""
+        android:textSize="25pt" />
+
+
+    <RelativeLayout
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="30pt"
+        android:layout_below="@+id/number">
+
+        <Button
+            android:id="@+id/n1"
+            android:background="#333333"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:layout_width="127pt"
+            android:layout_height="fill_parent"
+            android:text="" />
+
+        <Button
+            android:id="@+id/n2"
+            android:background="#333333"
+            android:layout_marginBottom="1pt"
+            android:layout_width="50pt"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/n1"
+            android:text="DELETE"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/row1">
+
+        <Button
+            android:id="@+id/n3"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:text="7"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n4"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_toRightOf="@id/n3"
+            android:text="8"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n5"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_toRightOf="@id/n4"
+            android:text="9"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n6"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_toRightOf="@id/n5"
+            android:text="÷"
+            android:layout_marginBottom="1pt"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n7"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n3"
+            android:text="4"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n8"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n4"
+            android:layout_toRightOf="@id/n7"
+            android:text="5"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n9"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n5"
+            android:layout_toRightOf="@id/n8"
+            android:text="6"
+            android:layout_marginBottom="1pt"
+            android:layout_marginRight="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n10"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n6"
+            android:layout_toRightOf="@id/n9"
+            android:text="×"
+            android:layout_marginBottom="1pt"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n11"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n7"
+            android:text="1"
+            android:layout_marginBottom="1pt"
+            android:layout_marginRight="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n12"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n8"
+            android:layout_toRightOf="@id/n11"
+            android:text="2"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n13"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n9"
+            android:layout_toRightOf="@id/n12"
+            android:text="3"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n14"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n10"
+            android:layout_toRightOf="@id/n13"
+            android:text="-"
+            android:layout_marginBottom="1pt"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n15"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n11"
+            android:text="."
+            android:layout_marginRight="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n16"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n12"
+            android:layout_toRightOf="@id/n15"
+            android:text="0"
+            android:layout_marginRight="1pt"
+            android:background="#333300"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n17"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n13"
+            android:layout_toRightOf="@id/n16"
+            android:text="="
+            android:layout_marginRight="1pt"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/n18"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_below="@id/n14"
+            android:layout_toRightOf="@id/n17"
+            android:text="+"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:textSize="15pt" />
+    </RelativeLayout>
+
+</RelativeLayout>
