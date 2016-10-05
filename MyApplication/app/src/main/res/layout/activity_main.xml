@@ -22,7 +22,7 @@
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/text01" />
 
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text = ""
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:layout_toRightOf="@id/text02"
         android:layout_marginLeft="10dp"
         android:layout_below="@id/editText1"/>
@@ -52,7 +52,8 @@
         android:layout_below="@id/text02"
         android:layout_marginTop="5pt"
         android:textSize="8pt"
-        android:text="+" />
+        android:text="+"
+        android:onClick="onButtonClicked"/>
 
     <Button
         android:id="@+id/button02"
@@ -60,7 +61,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button01"
         android:textSize="11pt"
-        android:text="-" />
+        android:text="-"
+        android:onClick="onButtonClicked"/>
 
     <Button
         android:id="@+id/button03"
@@ -68,7 +70,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button02"
         android:textSize="9pt"
-        android:text="*" />
+        android:text="*"
+        android:onClick="onButtonClicked"/>
 
     <Button
         android:id="@+id/button04"
@@ -76,7 +79,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button03"
         android:textSize="9pt"
-        android:text="/" />
+        android:text="/"
+        android:onClick="onButtonClicked"/>
 
     <TextView
         android:id="@+id/text03"
@@ -92,7 +96,6 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:paddingTop="1pt"
-        android:layout_marginRight="20pt"
         android:layout_toRightOf="@id/text03"
         android:layout_below="@id/button04"   />
 
